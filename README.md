@@ -23,10 +23,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing is used to in conjunction with CSS - allowing you to write your CSS styling in a more clean and concise way. It allows for variables, mixins, functions, and nesting (among other things) so you can do more with your CSS code and with less duplication.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concepts are variables and mixins. Oddly enough, these are also the ones I probably struggle with the most! It is just a matter of getting used to taking what we know about vanilla CSS and getting used to arranging and organizing our styling in a different way.
+
 3. How would you explain the concept of a variable to someone new to programming?
+A variable allows you to define something. Depending on the type of variable you use, you may be able to adjust the definition of the variable to suit future needs as you go further in your code. Examples: var can be redeclared AND redefined, let can be redefined but NOT redeclared, and const is not able to be redefined OR redeclared.
+
 4. What is the purpose of using functions in code?
+The purpose of functions in coding is allow you to generate a block of code that can be referenced and reused throught the code using the name of the function.
+
 5. What is JSON data?
+it is data that is represented by primitive datat types, such as numbers, strings, booleans, null, and undefined.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -36,17 +47,17 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your Team Lead as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [X] Add a viewport meta tag to the head of your index.html page.
+* [X] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -78,6 +89,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master
