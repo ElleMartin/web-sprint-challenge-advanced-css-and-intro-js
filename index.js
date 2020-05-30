@@ -227,22 +227,22 @@ console.log(artists);
 */
 
 function getArtistByIndex(artists,i) {
-    return "The artist at index " + artists.id + "is" + artists.name;
+  return ("The artist at index " + artists[i].id + " is " + artists[i].name);
 }
 
-  
-  /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(artists){
-  for (let i=0; i<artists.length; i++){
-    if(artists.years >= 1900 && artists.years <= 2000){
-      return artists.name;
-    }
-  }
-}
+	let twentiethCentury = [];
+	for(let i = 0; i<artists.length; i++){
+		if (artists[i].years = 1900 - 2000) {
+			twentiethCentury.push(artists[i]);
+		}
+		return twentiethCentury;
+	}
+
 
 
 
@@ -257,12 +257,9 @@ function get20s(artists){
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(artists,i) {
-    artists.splice(i[i]);
+    artists.splice(0[1]);
      return artists.length;
    }
-  
-  removeArtist(artists,0);
-   console.log(artists)
   /**
 
 
@@ -281,10 +278,10 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should console.log() the new array with information added"*/
 
 function addArtist(artists,i){
-
-    /* Code here */
-
+  artists.push();
   }
+
+  console.log(addArtist)
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -339,6 +336,4 @@ function randomize(/* Code here */){
     /* Code here */
 
   }
-
-
- /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+}
