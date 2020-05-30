@@ -208,11 +208,14 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-
+console.log(artists[0].name);
+console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+artists[8].name = "Vincent Van Gogh";
 
+console.log(artists);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -222,20 +225,25 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
-  }
+
+function getArtistByIndex(artists,i) {
+    return "The artist at index " + artists.id + "is" + artists.name;
+}
+
   
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+function get20s(artists){
+  for (let i=0; i<artists.length; i++){
+    if(artists.years >= 1900 && artists.years <= 2000){
+      return artists.name;
+    }
+  }
 }
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -248,10 +256,13 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+function removeArtist(artists,i) {
+    artists.splice(i[i]);
+     return artists.length;
+   }
   
+  removeArtist(artists,0);
+   console.log(artists)
   /**
 
 
@@ -269,7 +280,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(artists,i){
 
     /* Code here */
 
