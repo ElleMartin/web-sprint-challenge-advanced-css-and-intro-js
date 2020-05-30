@@ -215,7 +215,8 @@ console.log(artists[2].bio);
 
 artists[8].name = "Vincent Van Gogh";
 
-console.log(artists);
+console.log(artists[8]);
+
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -230,19 +231,22 @@ function getArtistByIndex(artists,i) {
   return ("The artist at index " + artists[i].id + " is " + artists[i].name);
 }
 
+console.log(getArtistByIndex(artists,0));
+
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(artists){
 	let twentiethCentury = [];
-	for(let i = 0; i<artists.length; i++){
-		if (artists[i].years = 1900 - 2000) {
+	for(let i = 0; i < artists.length; i++){
+		if (artists[i].years <= 1900 - 2000) {
 			twentiethCentury.push(artists[i]);
 		}
 		return twentiethCentury;
-	}
-
+  }
+  
+console.log(get20s(artists)); //NOTHING DISPLAYING
 
 
 
@@ -256,13 +260,14 @@ function get20s(artists){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(artists,i) {
-    artists.splice(0[1]);
-     return artists.length;
-   }
-  /**
+   
+  function removeArtist(artists,i) {
+    artists.splice(i[1])
+     return artists.length
+}
 
-
+console.log(removeArtist(artists,0));
+console.log(artists.length); //NOTHING DISPLAYING
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -277,11 +282,24 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(artists,i){
-  artists.push();
+function addArtist(artists) {
+  let newArtist = {
+    "id": 21,
+    "name": "Elle Martin",
+    "years": "1988 - 2020",
+    "genre": "Web Design",
+    "nationality": "Italian/Irish Mutt",
+    "bio": "Interesting content about me here. Let it wash over you - how interesting this content is."
   }
+  newArtist.push(artists[i])
 
-  console.log(addArtist)
+  return artists;
+}
+
+console.log(newArtist)
+console.log(artists) //NOTHING DISPLAYING
+
+  
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -291,11 +309,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
-}
+function lotsOfArt(artists){
+  let oneHundredPlus = []
+  for (let i = 0; i < artists.length; i++) {
+		if (artists[i].paintings > 100) {
+			oneHundredPlus.push(artists[i].name);
+		}
+	}
+	return oneHundredPlus;
+  }
+console.log(lotsOfArt(artists)); //NOTHING DISPLAYING
 
 
 
